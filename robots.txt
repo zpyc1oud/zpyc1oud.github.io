@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zpyc1oud.github.io/sitemap.xml
+

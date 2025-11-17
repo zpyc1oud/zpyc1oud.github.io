@@ -1,44 +1,48 @@
-title: "Pengyu Zha | Academic Profile"
-description: "Academic profile for Pengyu Zha (查鹏宇), an undergraduate at Shenzhen University specializing in image generation and face editing."
+# Site settings
+title: Pengyu Zha - Academic Homepage
+description: >-
+  Pengyu Zha (查鹏宇), Undergraduate Student at Shenzhen University.
+  Research interests: Image Generation, Face Editing, Computer Vision.
+author: Pengyu Zha
+email: zpyc1oud@outlook.com
 url: "https://zpyc1oud.github.io"
 baseurl: ""
-lang: "en"
-theme: jekyll-theme-cayman
-github_username: "zpyc1oud"
-email: "zpyc1oud@outlook.com"
-keywords:
-  - "Pengyu Zha"
-  - "pengyuzha"
-  - "查鹏宇"
-  - "Shenzhen University"
-  - "深圳大学"
-  - "image generation"
-  - "face editing"
-permalink: pretty
-markdown: kramdown
+
+# Personal information
+name: Pengyu Zha
+chinese_name: 查鹏宇
+institution: Shenzhen University
+position: Undergraduate Student
+github: https://github.com/zpyc1oud
+
+# SEO settings
+lang: en
+keywords: Pengyu Zha, 查鹏宇, Shenzhen University, 深圳大学, Image Generation, Face Editing, Computer Vision
+google_site_verification: # Add your verification code here if needed
+
+# Theme settings
+theme: minima
+show_excerpts: false
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .gitignore
+
+# Plugins
 plugins:
+  - jekyll-feed
   - jekyll-seo-tag
-collections:
-  posts:
-    output: true
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: default
-      lang: en
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-navigation:
-  - label: "About"
-    url: "#about"
-  - label: "Research Focus"
-    url: "#research"
-  - label: "Publications"
-    url: "#publications"
-  - label: "Contact"
-    url: "#contact"
+  - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
