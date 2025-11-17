@@ -1,53 +1,44 @@
-title: Pengyu Zha (查鹏宇)
-name: Pengyu Zha
-description: Undergraduate Student at Shenzhen University | Computer Vision Research
-email: zpyc1oud@outlook.com
-github_username: zpyc1oud
+title: "Pengyu Zha | Academic Profile"
+description: "Academic profile for Pengyu Zha (查鹏宇), an undergraduate at Shenzhen University specializing in image generation and face editing."
 url: "https://zpyc1oud.github.io"
 baseurl: ""
-
-# Build Settings
+lang: "en"
+theme: jekyll-theme-cayman
+github_username: "zpyc1oud"
+email: "zpyc1oud@outlook.com"
+keywords:
+  - "Pengyu Zha"
+  - "pengyuzha"
+  - "查鹏宇"
+  - "Shenzhen University"
+  - "深圳大学"
+  - "image generation"
+  - "face editing"
+permalink: pretty
 markdown: kramdown
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-sitemap
-
-# Theme Settings
-theme: minima
-
-# Navigation
+collections:
+  posts:
+    output: true
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      lang: en
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
 navigation:
-  - title: Home
-    url: /
-  - title: About
-    url: /about
-  - title: Research
-    url: /research
-  - title: Contact
-    url: /contact
-
-# Author
-author:
-  name: Pengyu Zha (查鹏宇)
-  affiliation: Shenzhen University
-  position: Undergraduate Student
-  research_area: Computer Vision
-
-# Social Media (可根据需要修改)
-social:
-  github: zpyc1oud
-  # email: your.email@example.com
-  # twitter: your_twitter_handle
-  # linkedin: your_linkedin_profile
-  # google_scholar: your_google_scholar_id
-
-# Exclude files
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-  - .git
-  - .gitignore
+  - label: "About"
+    url: "#about"
+  - label: "Research Focus"
+    url: "#research"
+  - label: "Publications"
+    url: "#publications"
+  - label: "Contact"
+    url: "#contact"
 

@@ -1,0 +1,140 @@
+:root {
+  --accent-color: #0f8bff;
+  --text-color: #1e1e1e;
+  --muted-color: #5c5c5c;
+  --panel-bg: #ffffff;
+  --panel-border: #eaecef;
+  --page-bg: #f5f7fb;
+  --link-color: #0d6efd;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: var(--text-color);
+  background: var(--page-bg);
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: var(--muted-color);
+}
+
+.hero {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--muted-color);
+}
+
+.panel {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 16px;
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 12px 24px rgba(15, 28, 63, 0.06);
+}
+
+.panel h2 {
+  margin-top: 0;
+}
+
+.pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pill {
+  background: rgba(15, 139, 255, 0.08);
+  color: var(--link-color);
+  border-radius: 999px;
+  padding: 0.25rem 0.95rem;
+  font-size: 0.95rem;
+  border: 1px solid rgba(15, 139, 255, 0.2);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid var(--panel-border);
+  border-radius: 14px;
+  padding: 1rem;
+  background: #fff;
+  min-height: 180px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-list a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+.note {
+  border-left: 4px solid var(--accent-color);
+  padding-left: 1rem;
+  margin-top: 1rem;
+  color: var(--muted-color);
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .panel {
+    padding: 1.25rem;
+  }
+}
+
