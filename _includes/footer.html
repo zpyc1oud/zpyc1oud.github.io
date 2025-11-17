@@ -1,0 +1,49 @@
+<footer class="site-footer">
+    <div class="wrapper">
+        <div class="footer-content">
+            <p class="copyright">
+                &copy; {{ 'now' | date: "%Y" }} {{ site.name }}. All rights reserved.
+            </p>
+            <div class="social-links">
+                {% if site.social.github %}
+                <a href="https://github.com/{{ site.social.github }}" 
+                   class="social-link" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                {% endif %}
+                
+                {% if site.social.email %}
+                <a href="mailto:{{ site.social.email }}" 
+                   class="social-link" 
+                   aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                {% endif %}
+                
+                {% if site.social.google_scholar %}
+                <a href="https://scholar.google.com/citations?user={{ site.social.google_scholar }}" 
+                   class="social-link" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Google Scholar">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+                {% endif %}
+                
+                {% if site.social.linkedin %}
+                <a href="https://linkedin.com/in/{{ site.social.linkedin }}" 
+                   class="social-link" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</footer>
+
