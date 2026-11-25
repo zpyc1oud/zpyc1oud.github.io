@@ -1,8 +1,8 @@
 # Site settings
-title: Pengyu Zha - Academic Homepage
+title: Pengyu Zha - Research & Engineering
 description: >-
   Pengyu Zha (查鹏宇), Undergraduate Student at Shenzhen University.
-  Research interests: Image Generation, Face Editing, Computer Vision.
+  Research & engineering in generative modeling, real-time simulation, and robot learning.
 author: Pengyu Zha
 email: zpyc1oud@outlook.com
 url: "https://zpyc1oud.github.io"
@@ -17,7 +17,7 @@ github: https://github.com/zpyc1oud
 
 # SEO settings
 lang: en
-keywords: Pengyu Zha, 查鹏宇, Shenzhen University, 深圳大学, Image Generation, Face Editing, Computer Vision
+keywords: Pengyu Zha, 查鹏宇, Shenzhen University, 深圳大学, Robot Learning, EmbodiedUE, Beyond-Lip, Generative Modeling, Unreal Engine 5, Computer Vision
 google_site_verification: # Add your verification code here if needed
 
 # Theme settings
@@ -45,4 +45,3 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-

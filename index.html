@@ -1,38 +1,408 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Pengyu Zha · Research & Engineering</title>
-  <meta name="description" content="Pengyu Zha's research and engineering in robot learning, real-time simulation, and visual computing.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pengyu Zha · Research &amp; Engineering</title>
+  <meta name="description" content="Pengyu Zha (查鹏宇) — Research and engineering in generative modeling, real-time simulation, and robot learning. Creator of EmbodiedUE and first author of Beyond-Lip (ACAIT 2026).">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://zpyc1oud.github.io/">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231127d9'/%3E%3Ctext x='16' y='23' font-size='22' text-anchor='middle' fill='white' font-family='Georgia'%3Ep%3C/text%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23173dde'/%3E%3Ctext x='16' y='23' font-size='21' text-anchor='middle' fill='white' font-family='Georgia'%3EP%3C/text%3E%3C/svg%3E">
   <style>
-    :root{--ink:#121c30;--muted:#526079;--blue:#173dde;--line:#dce2ed;--paper:#fff;--soft:#f3f6fc;--serif:Georgia,'Times New Roman',serif;--sans:Inter,'Helvetica Neue',Arial,sans-serif}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration-thickness:1px;text-underline-offset:5px}a:hover{color:var(--blue)}a:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:6px}::selection{background:#dbe3ff}button,summary,a{-webkit-tap-highlight-color:transparent}.wrap{max-width:1200px;margin:auto;padding:0 48px}.skip{position:fixed;top:-100px;left:12px;z-index:20;background:white;padding:12px}.skip:focus{top:12px}header{border-bottom:1px solid var(--line);background:white}nav{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:94px}.brand{text-decoration:none;font-size:19px;font-weight:700;letter-spacing:-.6px}.brand span{color:var(--blue)}.navlinks{display:flex;gap:30px;font-size:14px}.navlinks a{text-decoration:none;padding:12px 0}.eyebrow{font-size:12px;letter-spacing:.15em;text-transform:uppercase;font-weight:650;color:var(--muted)}.hero{padding:80px 0 76px;display:grid;grid-template-columns:1.3fr 1fr;gap:72px;align-items:center}.hero h1{font:normal clamp(54px,7vw,88px)/1.06 var(--serif);letter-spacing:-4px;margin:22px 0 17px}.chinese{font-size:20px;font-weight:400;color:var(--muted);letter-spacing:.12em}.intro{font-size:20px;line-height:1.65;max-width:610px;margin:30px 0 26px}.intro strong{font-weight:500;color:var(--blue)}.links{display:flex;gap:26px;flex-wrap:wrap;font-size:15px}.links a{padding:6px 0}.hero-aside{border-left:1px solid var(--line);padding-left:40px;align-self:stretch;display:flex;flex-direction:column;justify-content:center}.aside-title{font:normal 27px/1.3 var(--serif);letter-spacing:-.5px;margin:16px 0 24px}.timing{width:100%;height:auto;display:block;overflow:visible}.diagram-caption{font-size:13px;color:var(--muted);line-height:1.5;margin:16px 0 0}.section{padding:62px 0;border-top:1px solid var(--line)}.section-head{display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin-bottom:36px}.section-head h2{font:normal 36px/1.2 var(--serif);letter-spacing:-1px;margin:0}.section-head .num{font-size:13px;color:var(--muted);margin-right:15px;font-family:var(--sans);letter-spacing:0}.section-note{font-size:14px;color:var(--muted)}.research-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}.research{padding-top:18px;border-top:2px solid var(--ink)}.research b{color:var(--blue);font-size:13px;letter-spacing:.07em}.research h3{font-size:19px;font-weight:550;line-height:1.3;margin:13px 0}.research p{font-size:15px;color:var(--muted);margin:0;line-height:1.75}.feature{display:grid;grid-template-columns:1fr 1.15fr;border:1px solid var(--line);min-height:365px}.project-visual{background:var(--blue);color:white;padding:36px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}.project-visual .eyebrow{color:#d5dfff}.project-name{font:normal clamp(38px,5vw,64px)/1.1 var(--serif);letter-spacing:-2px;margin:26px 0}.pipeline{display:flex;flex-wrap:wrap;gap:8px;font:14px/1.4 var(--sans)}.pipeline span{border:1px solid #94a6ff;padding:9px 12px}.visual-foot{font-size:13px;color:#d5dfff;margin-top:28px}.project-content{padding:36px}.tags{display:flex;gap:10px;flex-wrap:wrap;font-size:12px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}.project-content h3{font:normal 28px/1.25 var(--serif);margin:19px 0 16px}.project-content p{font-size:16px;color:var(--muted);margin:0 0 20px}.project-content a{font-size:14px}.note-row{display:grid;grid-template-columns:110px 1fr;gap:28px;padding:30px 0;border-bottom:1px solid var(--line)}.note-row:last-child{border-bottom:0;padding-bottom:0}.note-label{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--blue);padding-top:4px}.note-row h3{font-size:19px;font-weight:550;margin:0 0 10px}.note-row p{margin:0;color:var(--muted);max-width:770px;font-size:16px}details{margin-top:15px;max-width:770px}summary{cursor:pointer;font-size:14px;width:fit-content;color:var(--blue);padding:5px 0}details p{padding-top:12px}.about-grid{display:grid;grid-template-columns:1fr 2fr;gap:60px}.about-grid h2{font:normal 36px/1.2 var(--serif);margin:0}.about-grid p{margin:0 0 18px}.about-meta{display:flex;gap:32px;margin-top:30px;flex-wrap:wrap}.about-meta div{border-left:2px solid var(--line);padding-left:15px}.about-meta span{display:block;color:var(--muted);font-size:13px}.contact{background:var(--soft);padding:52px 0}.contact-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}.contact h2{font:normal 32px/1.2 var(--serif);margin:0 0 10px}.contact p{margin:0;color:var(--muted);font-size:15px}.email{font-size:clamp(16px,2.3vw,24px);overflow-wrap:anywhere}footer{padding:26px 0}.footer-inner{display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:12px}.footer-inner a{text-decoration:none}.footer-initials{color:var(--ink);font-weight:bold;font-size:15px}
-    @media(min-width:1500px){.hero{padding-top:100px;padding-bottom:94px}}@media(max-width:850px){.wrap{padding:0 28px}.hero{gap:35px}.hero h1{letter-spacing:-2px}.hero-aside{padding-left:25px}.intro{font-size:18px}.research-grid{gap:22px}.feature{grid-template-columns:1fr 1.1fr}.project-content,.project-visual{padding:25px}.about-grid{gap:30px}}
-    @media(max-width:640px){.wrap{padding:0 22px}nav{min-height:78px;gap:14px;flex-wrap:wrap;padding:17px 0}.navlinks{gap:18px;font-size:13px}.hero{display:block;padding:48px 0}.hero h1{font-size:62px;letter-spacing:-3px}.intro{font-size:18px;margin-top:23px}.hero-aside{border-left:0;border-top:1px solid var(--line);margin-top:38px;padding:28px 0 0}.aside-title{font-size:24px;margin-top:10px}.timing{max-width:420px}.section{padding:40px 0}.section-head{display:block;margin-bottom:26px}.section-head h2{font-size:30px}.section-note{display:block;margin-top:10px}.research-grid{grid-template-columns:1fr;gap:26px}.research{padding-top:13px}.feature{grid-template-columns:1fr}.project-visual{min-height:270px}.project-name{font-size:54px}.note-row{grid-template-columns:1fr;gap:8px;padding:26px 0}.about-grid{grid-template-columns:1fr;gap:24px}.contact-inner{display:block}.email{display:inline-block;margin-top:22px}.footer-inner{flex-wrap:wrap}.about-meta{gap:23px}.chinese{font-size:18px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    :root{
+      --ink:#121c30;
+      --muted:#526079;
+      --blue:#173dde;
+      --blue-deep:#102bb0;
+      --line:#dce2ed;
+      --paper:#ffffff;
+      --soft:#f4f7fc;
+      --serif:Georgia,'Times New Roman',serif;
+      --sans:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:96px}
+    body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.68 var(--sans);-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration-thickness:1px;text-underline-offset:5px;transition:color .16s ease}
+    a:hover{color:var(--blue)}
+    a:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
+    ::selection{background:#dbe3ff}
+    button,summary,a{-webkit-tap-highlight-color:transparent}
+
+    .wrap{max-width:1160px;margin:auto;padding:0 48px}
+    .skip{position:fixed;top:-100px;left:12px;z-index:20;background:white;padding:12px}
+    .skip:focus{top:12px}
+
+    header{border-bottom:1px solid var(--line);background:rgba(255,255,255,.94);backdrop-filter:blur(8px);position:sticky;top:0;z-index:10}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:80px}
+    .brand{text-decoration:none;font-size:19px;font-weight:700;letter-spacing:-.5px}
+    .brand span{color:var(--blue)}
+    .navlinks{display:flex;gap:28px;font-size:14px;color:var(--muted)}
+    .navlinks a{text-decoration:none;padding:10px 0}
+    .navlinks a:hover{color:var(--ink)}
+
+    .eyebrow{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:650;color:var(--muted)}
+
+    .hero{padding:76px 0 72px;display:grid;grid-template-columns:1.32fr 1fr;gap:68px;align-items:center}
+    .hero h1{font:normal clamp(52px,6.6vw,84px)/1.05 var(--serif);letter-spacing:-3.2px;margin:18px 0 14px}
+    .chinese{font-size:19px;font-weight:400;color:var(--muted);letter-spacing:.14em}
+    .intro{font-size:19px;line-height:1.68;max-width:590px;margin:26px 0 28px;color:var(--ink)}
+    .intro strong{font-weight:600;color:var(--blue)}
+    .links{display:flex;gap:24px;flex-wrap:wrap;font-size:15px}
+    .links a{padding:6px 0;font-weight:500}
+
+    .hero-aside{border-left:1px solid var(--line);padding-left:40px;align-self:stretch;display:flex;flex-direction:column;justify-content:center}
+    .aside-title{font:normal 30px/1.2 var(--serif);letter-spacing:-.6px;margin:14px 0 12px}
+    .aside-sub{font-size:17px;line-height:1.5;color:var(--muted);margin:0 0 22px}
+    .stat-list{display:grid;gap:0}
+    .stat-row{border-top:1px solid var(--line);padding:11px 0;display:flex;justify-content:space-between;align-items:baseline;gap:14px;font-size:14.5px}
+    .stat-row strong{color:var(--blue);font-weight:600}
+    .stat-row span{color:var(--muted);font-size:13px;text-align:right}
+    .diagram-caption{font-size:13px;color:var(--muted);line-height:1.5;margin:16px 0 0}
+
+    .section{padding:64px 0;border-top:1px solid var(--line)}
+    .section-head{display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin-bottom:38px}
+    .section-head h2{font:normal 34px/1.2 var(--serif);letter-spacing:-.9px;margin:0}
+    .section-head .num{font-size:13px;color:var(--muted);margin-right:14px;font-family:var(--sans);letter-spacing:.04em}
+    .section-note{font-size:14px;color:var(--muted)}
+
+    .research-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}
+    .research{padding-top:18px;border-top:2px solid var(--ink)}
+    .research b{color:var(--blue);font-size:12px;letter-spacing:.09em}
+    .research h3{font-size:19px;font-weight:600;line-height:1.35;margin:12px 0 10px}
+    .research p{font-size:15px;color:var(--muted);margin:0;line-height:1.72}
+
+    .feature{display:grid;grid-template-columns:1fr 1.2fr;border:1px solid var(--line);min-height:348px;margin-bottom:14px}
+    .project-visual{background:linear-gradient(155deg,var(--blue) 0%,var(--blue-deep) 100%);color:white;padding:36px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+    .project-visual .eyebrow{color:#d5dfff}
+    .project-name{font:normal clamp(36px,4.5vw,58px)/1.08 var(--serif);letter-spacing:-1.8px;margin:22px 0}
+    .pipeline{display:flex;flex-wrap:wrap;gap:8px;font:13px/1.35 var(--sans)}
+    .pipeline span{border:1px solid rgba(255,255,255,.42);padding:7px 11px;background:rgba(255,255,255,.06)}
+    .visual-foot{font-size:13px;color:#d5dfff;margin-top:24px}
+
+    .project-content{padding:36px;display:flex;flex-direction:column;justify-content:space-between}
+    .tags{display:flex;gap:10px;flex-wrap:wrap;align-items:center;font-size:12px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+    .tag-pill{background:var(--soft);color:var(--blue);border:1px solid #d5e0ff;padding:3px 9px;font-weight:600;letter-spacing:.03em}
+    .project-content h3{font:normal 28px/1.24 var(--serif);margin:16px 0 14px;letter-spacing:-.4px}
+    .project-content p{font-size:15.5px;color:var(--muted);margin:0 0 14px;line-height:1.7}
+    .project-actions{display:flex;gap:22px;flex-wrap:wrap;margin-top:10px;font-size:14.5px;font-weight:500}
+    .project-actions a{color:var(--blue)}
+
+    .note-row{display:grid;grid-template-columns:130px 1fr;gap:28px;padding:30px 0;border-bottom:1px solid var(--line)}
+    .note-row:last-child{border-bottom:0;padding-bottom:0}
+    .note-label{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--blue);padding-top:4px;line-height:1.55;font-weight:600}
+    .note-sublabel{display:block;color:var(--muted);font-weight:500;text-transform:none;letter-spacing:0;margin-top:2px}
+    .note-row h3{font-size:19px;font-weight:600;margin:0 0 8px;line-height:1.38}
+    .note-authors{font-size:14px;color:var(--ink);margin:0 0 10px}
+    .note-row p{margin:0;color:var(--muted);max-width:780px;font-size:15.5px;line-height:1.72}
+    .metrics-strip{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+    .metric-chip{font-size:12.5px;color:var(--ink);background:var(--soft);border:1px solid var(--line);padding:4px 10px}
+    .metric-chip b{color:var(--blue);font-weight:600}
+
+    details{margin-top:14px;max-width:780px}
+    summary{cursor:pointer;font-size:14px;width:fit-content;color:var(--blue);padding:4px 0;font-weight:500}
+    details p{padding-top:10px;font-size:14.5px}
+
+    .about-grid{display:grid;grid-template-columns:1fr 2fr;gap:60px}
+    .about-grid h2{font:normal 34px/1.2 var(--serif);margin:0}
+    .about-grid p{margin:0 0 16px;color:var(--muted);font-size:15.5px;line-height:1.75}
+    .about-grid p strong{color:var(--ink);font-weight:600}
+    .about-meta{display:flex;gap:34px;margin-top:28px;flex-wrap:wrap}
+    .about-meta div{border-left:2px solid var(--line);padding-left:15px;font-size:15px}
+    .about-meta span{display:block;color:var(--muted);font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:2px}
+
+    .contact{background:var(--soft);padding:52px 0;border-top:1px solid var(--line)}
+    .contact-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}
+    .contact h2{font:normal 32px/1.2 var(--serif);margin:0 0 8px}
+    .contact p{margin:0;color:var(--muted);font-size:15px}
+    .email{font-size:clamp(16px,2.2vw,23px);overflow-wrap:anywhere;font-weight:500}
+
+    footer{padding:26px 0}
+    .footer-inner{display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:12.5px}
+    .footer-inner a{text-decoration:none}
+    .footer-initials{color:var(--ink);font-weight:700;font-size:15px}
+
+    @media(min-width:1480px){.hero{padding-top:92px;padding-bottom:86px}}
+    @media(max-width:900px){
+      .wrap{padding:0 28px}
+      .hero{gap:36px}
+      .hero h1{letter-spacing:-2px}
+      .hero-aside{padding-left:26px}
+      .intro{font-size:17.5px}
+      .research-grid{gap:24px}
+      .feature{grid-template-columns:1fr 1.1fr}
+      .project-content,.project-visual{padding:26px}
+      .about-grid{gap:32px}
+    }
+    @media(max-width:680px){
+      .wrap{padding:0 20px}
+      nav{min-height:72px;gap:12px;flex-wrap:wrap;padding:12px 0}
+      .navlinks{gap:16px;font-size:13px}
+      .hero{display:block;padding:44px 0}
+      .hero h1{font-size:54px;letter-spacing:-2.4px}
+      .intro{font-size:17px;margin-top:20px}
+      .hero-aside{border-left:0;border-top:1px solid var(--line);margin-top:34px;padding:26px 0 0}
+      .aside-title{font-size:25px;margin-top:10px}
+      .section{padding:42px 0}
+      .section-head{display:block;margin-bottom:26px}
+      .section-head h2{font-size:29px}
+      .section-note{display:block;margin-top:8px}
+      .research-grid{grid-template-columns:1fr;gap:24px}
+      .research{padding-top:14px}
+      .feature{grid-template-columns:1fr}
+      .project-visual{min-height:250px}
+      .project-name{font-size:48px}
+      .note-row{grid-template-columns:1fr;gap:8px;padding:24px 0}
+      .about-grid{grid-template-columns:1fr;gap:22px}
+      .contact-inner{display:block}
+      .email{display:inline-block;margin-top:18px}
+      .footer-inner{flex-wrap:wrap}
+      .about-meta{gap:20px}
+      .chinese{font-size:17px}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header><div class="wrap"><nav aria-label="Main navigation"><a class="brand" href="#main">Pengyu Zha<span>.</span></a><div class="navlinks"><a href="#research">Research</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Contact</a></div></nav></div></header>
+
+<header>
+  <div class="wrap">
+    <nav aria-label="Main navigation">
+      <a class="brand" href="#main">Pengyu Zha<span>.</span></a>
+      <div class="navlinks">
+        <a href="#research">Research</a>
+        <a href="#projects">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
 <main id="main" class="wrap">
   <section class="hero" aria-labelledby="name">
-    <div><div class="eyebrow">Research & engineering</div><h1 id="name">Pengyu Zha</h1><div class="chinese" lang="zh-CN">查鹏宇</div><p class="intro">I study how learned systems <strong>perceive, act, and adapt.</strong> My interests span robot learning, real-time simulation, and visual computing.</p><div class="links"><a href="https://github.com/zpyc1oud">GitHub</a><a href="mailto:zpyc1oud@outlook.com">Email</a><a href="#projects">Selected work</a></div></div>
-    <aside class="hero-aside" aria-label="Featured research"><div class="eyebrow">Featured research · ACAIT 2026</div><h2 class="aside-title">Beyond-Lip</h2><p style="font-size:19px;line-height:1.5;margin:0 0 24px">Eye-Aware Talking Head Synthesis with Explicit Gaze Modeling</p><div style="display:grid;gap:10px;color:var(--blue);font-size:15px"><div style="border-top:1px solid var(--line);padding-top:10px">Expression</div><div style="border-top:1px solid var(--line);padding-top:10px">Head pose</div><div style="border-top:1px solid var(--line);padding-top:10px">Eye movement</div></div><p class="diagram-caption">First-author work · Accepted at ACAIT 2026</p></aside>
+    <div>
+      <div class="eyebrow">Research &amp; Engineering · Shenzhen University</div>
+      <h1 id="name">Pengyu Zha</h1>
+      <div class="chinese" lang="zh-CN">查鹏宇</div>
+      <p class="intro">
+        I work on <strong>generative modeling, real-time simulation, and robot learning</strong> — bridging algorithm design with the interactive systems used to train and evaluate them.
+      </p>
+      <div class="links">
+        <a href="https://github.com/zpyc1oud">GitHub</a>
+        <a href="https://github.com/zpyc1oud/EmbodiedUE">EmbodiedUE</a>
+        <a href="mailto:zpyc1oud@outlook.com">Email</a>
+        <a href="#projects">Selected work</a>
+      </div>
+    </div>
+
+    <aside class="hero-aside" aria-label="Featured paper">
+      <div class="eyebrow">Featured paper · ACAIT 2026</div>
+      <h2 class="aside-title">Beyond-Lip</h2>
+      <p class="aside-sub">Eye-Aware Talking Head Synthesis with Explicit Gaze Modeling</p>
+      <div class="stat-list">
+        <div class="stat-row">
+          <strong>Explicit gaze modeling</strong>
+          <span>DECA + 2D gaze · MotionDiT</span>
+        </div>
+        <div class="stat-row">
+          <strong>EyeDiv +62.8%</strong>
+          <span>vs. FLOAT on VoxCeleb2</span>
+        </div>
+        <div class="stat-row">
+          <strong>EyeReal &minus;38.5%</strong>
+          <span>gaze &amp; blink realism</span>
+        </div>
+      </div>
+      <p class="diagram-caption">First-author paper · Accepted at ACAIT 2026</p>
+    </aside>
   </section>
-  <section class="section" id="research"><div class="section-head"><h2><span class="num">01</span>Research interests</h2><span class="section-note">From visual representations to physical behavior</span></div><div class="research-grid">
-    <article class="research"><b>LEARNING</b><h3>Robot learning</h3><p>Reinforcement learning for robot control, from training in simulation to evaluating policy behavior in interactive environments.</p></article>
-    <article class="research"><b>SIMULATION</b><h3>Real-time environments</h3><p>Training and deploying policies in interactive worlds. Understanding the relationship between simulation, sensing, and action.</p></article>
-    <article class="research"><b>VISION</b><h3>Visual computing</h3><p>Computer vision and deep learning, including image generation and face editing.</p></article>
-  </div></section>
-  <section class="section" id="projects"><div class="section-head"><h2><span class="num">02</span>Selected work</h2><span class="section-note">Research software & papers</span></div>
-    <article class="feature"><div class="project-visual"><div class="eyebrow">Simulation / reinforcement learning</div><div class="project-name">EmbodiedUE</div><div class="pipeline" aria-label="Project workflow"><span>Train</span><span>Evaluate</span><span>Deploy</span></div><div class="visual-foot">Unreal Engine · Python · Robot policies</div></div><div class="project-content"><div class="tags"><span>Research software</span><span>In development</span></div><h3>Robot learning in<br>interactive worlds.</h3><p>A framework for training robot policies with Unreal Engine physics and deploying policy artifacts in game environments.</p><p>The engineering work includes Task interfaces, training and deployment behavior, and layered validation.</p><a href="https://github.com/zpyc1oud/EmbodiedUE">View repository</a></div></article>
-    <article class="note-row"><div class="note-label">ACAIT 2026<br>Accepted</div><div><h3>Beyond-Lip: Eye-Aware Talking Head Synthesis with Explicit Gaze Modeling</h3><p style="font-size:14px;margin-bottom:12px"><strong>Pengyu Zha</strong>, Ji Xu, Weicheng Xie</p><p>Audio-driven talking-head synthesis with explicit gaze modeling. Beyond-Lip models expression, head pose, and eye movements to address the “dead-eye” artifact beyond lip synchronization.</p><details><summary>Read the approach</summary><p>A MotionDiT-based audio-to-motion pipeline is paired with a semantic face renderer. The work introduces Eye Motion Diversity (EyeDiv) and Eye Behavior Realism Distance (EyeReal) to evaluate eye behavior.</p></details></div></article>
+
+  <section class="section" id="research">
+    <div class="section-head">
+      <h2><span class="num">01</span>Research interests</h2>
+      <span class="section-note">From generative representations to physical behavior</span>
+    </div>
+    <div class="research-grid">
+      <article class="research">
+        <b>ROBOT LEARNING</b>
+        <h3>Embodied control &amp; RL</h3>
+        <p>Reinforcement learning for robot locomotion and control, connecting parallel physics simulation, reusable robot interfaces, and in-engine policy deployment.</p>
+      </article>
+      <article class="research">
+        <b>SIMULATION</b>
+        <h3>Real-time interactive worlds</h3>
+        <p>Lockstep training and verification infrastructure in Unreal Engine 5 / Chaos for studying how learned policies behave inside interactive scenes.</p>
+      </article>
+      <article class="research">
+        <b>GENERATIVE AI &amp; 3D</b>
+        <h3>Multimodal &amp; physical humans</h3>
+        <p>Audio-driven talking-head synthesis with explicit gaze modeling, latent video diffusion transformers, and data-driven 3D physical face modeling.</p>
+      </article>
+    </div>
   </section>
-  <section class="section" id="about"><div class="about-grid"><h2><span class="eyebrow">03 / Background</span><br>About me</h2><div><p>I am Pengyu Zha (查鹏宇). My work brings together learning algorithms and the systems needed to evaluate them.</p><p>I am interested in understanding where a model’s behavior changes when it moves from a controlled setting to an interactive environment.</p><div class="about-meta"><div><span>University</span>Shenzhen University</div><div><span>Focus</span>Learning, simulation & vision</div></div></div></div></section>
+
+  <section class="section" id="projects">
+    <div class="section-head">
+      <h2><span class="num">02</span>Selected work</h2>
+      <span class="section-note">Open-source frameworks, papers &amp; research prototypes</span>
+    </div>
+
+    <article class="feature">
+      <div class="project-visual">
+        <div class="eyebrow">Open-source · Unreal Engine 5.8</div>
+        <div class="project-name">EmbodiedUE</div>
+        <div class="pipeline" aria-label="Project workflow">
+          <span>Configure</span>
+          <span>Train</span>
+          <span>Evaluate</span>
+          <span>Deploy (ONNX)</span>
+        </div>
+        <div class="visual-foot">UE 5.8 / Chaos · Python · RSL-RL (PPO) · NNE</div>
+      </div>
+      <div class="project-content">
+        <div>
+          <div class="tags">
+            <span class="tag-pill" id="embodiedue-stars">&#9733; 20 Stars</span>
+            <span>Open-source</span>
+            <span>UE 5.8 / C++ / Python</span>
+          </div>
+          <h3>Train robots in Chaos.<br>Deploy inside Unreal.</h3>
+          <p>An open-source robot reinforcement-learning platform for Unreal Engine developers, reimplemented from internship-stage infrastructure and actively developed.</p>
+          <p>Connects Python/RSL-RL training with Unreal Engine Chaos physics through shared observation/action plans and <code>.uerlpol</code> ONNX policy artifacts — exercised on CartPole balancing and PhantomX flat and rough-terrain locomotion.</p>
+        </div>
+        <div class="project-actions">
+          <a href="https://github.com/zpyc1oud/EmbodiedUE">View repository &#8599;</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="note-row">
+      <div class="note-label">
+        ACAIT 2026
+        <span class="note-sublabel">Accepted · 1st Author</span>
+      </div>
+      <div>
+        <h3>Beyond-Lip: Eye-Aware Talking Head Synthesis with Explicit Gaze Modeling</h3>
+        <p class="note-authors"><strong>Pengyu Zha</strong>, Ji Xu, Weicheng Xie</p>
+        <p>Addresses the “dead-eye” artifact in audio-driven talking-head synthesis by explicitly modeling 2D gaze alongside expression, head pose, and jaw pose across motion representation, rendering, diffusion generation, and evaluation.</p>
+        <div class="metrics-strip">
+          <span class="metric-chip"><b>GErr 10.94 &rarr; 8.03</b> (ablation)</span>
+          <span class="metric-chip"><b>EyeDiv +62.8%</b> vs. FLOAT</span>
+          <span class="metric-chip"><b>EyeReal &minus;38.5%</b> vs. FLOAT</span>
+        </div>
+        <details>
+          <summary>Read the approach &amp; renderer results</summary>
+          <p>Concatenates DECA expression, head pose, and jaw parameters with 2D gaze angles into a frame-level motion representation. A gaze-conditioned semantic face renderer with gaze consistency loss reaches GErr 8.03, EAR 0.0317, PSNR 23.75, LPIPS 0.131, and ID 0.667 on the held-out split, while a Whisper-conditioned MotionDiT (Flow Matching) learns one-to-many audio-to-eye motion evaluated with the proposed EyeDiv and EyeReal protocols on VoxCeleb2.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="note-row">
+      <div class="note-label">
+        3D Physics
+        <span class="note-sublabel">2026.02 &ndash; 2026.07</span>
+      </div>
+      <div>
+        <h3>FacialRig Research: Data-Driven Physical Face Model Reproduction</h3>
+        <p>Tencent Game Engine Technology Remote Project. Reproduced core stages of <em>Learning a Generalized Physical Face Model From Data</em>, connecting FaMoS mesh preprocessing, FLAME fitting, FLAME-to-SCULPTOR canonical skin and skull recovery, and two-stage Nc/Ne modulated SIREN neural deformation training with physical and elastic regularization in PyTorch Lightning and Hydra.</p>
+      </div>
+    </article>
+
+    <article class="note-row">
+      <div class="note-label">
+        Diffusion
+        <span class="note-sublabel">2025.05 &ndash; Present</span>
+      </div>
+      <div>
+        <h3>LightningHead: Audio-Driven Talking-Head Generation with LightningDiT</h3>
+        <p>Project Lead (Undergraduate Innovation Project, 3-member team). Built a latent video diffusion prototype combining VAE latent compression, Whisper audio features, and a 12-layer DiT3D backbone (200k training steps), introducing factorized spatio-temporal self-attention that cuts multi-frame attention compute to <strong>20.5%</strong> of standard 3D self-attention.</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="section-head">
+      <h2><span class="num">03</span>Experience &amp; honors</h2>
+      <span class="section-note">Industry engineering &amp; algorithm competitions</span>
+    </div>
+
+    <article class="note-row">
+      <div class="note-label">
+        Tencent IEG
+        <span class="note-sublabel">2026.07 &ndash; 2026.09</span>
+      </div>
+      <div>
+        <h3>Intern, Engine Technology Group &mdash; Tencent Interactive Entertainment Group</h3>
+        <p>Built a reusable UE 5.8 / Chaos + RSL-RL (PPO) parallel lockstep robot-learning platform with runtime SkeletalMesh topology reflection (<code>RobotSpec</code>) and flat/rough-terrain locomotion curriculum; later reimplemented the framework design as the open-source <a href="https://github.com/zpyc1oud/EmbodiedUE">EmbodiedUE</a>.</p>
+        <details>
+          <summary>Agent rendering verification tooling (UE Render Verify)</summary>
+          <p>Also designed a contract-first Node/MCP validation control plane separating authoring from verification, implementing layered numerical and spatial ROI gates (L0&ndash;L3, L6), traceable validation reports, and automated Mock Backend / Fake Session tests while preserving clean boundaries from live Unreal Editor verification.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="note-row">
+      <div class="note-label">
+        Competition
+        <span class="note-sublabel">2025 · Top 5%</span>
+      </div>
+      <div>
+        <h3>Tencent Advertising Algorithm Competition 2025 &mdash; Rank 119 / 2,800+ teams</h3>
+        <p>Built a PyTorch sequential ad recommendation and two-tower cosine retrieval model combining an HSTU sequence encoder (relative time and position attention), CLS-token Transformer fusion of sparse and multimodal creative embeddings, and InfoNCE + auxiliary Triplet contrastive training with bf16 and 8-bit AdamW.</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="section" id="about">
+    <div class="about-grid">
+      <h2><span class="eyebrow">04 / Background</span><br>About me</h2>
+      <div>
+        <p>I am <strong>Pengyu Zha (查鹏宇)</strong>, an undergraduate in Computer Science and Technology (Innovation Class) at Shenzhen University (2023&ndash;2027). My work brings together learning algorithms and the real-time systems needed to train and evaluate them.</p>
+        <p>My interests center on algorithm research and development across generative modeling and embodied intelligence &mdash; especially understanding how learned representations, objectives, and evaluation hold up when models move from offline benchmarks into interactive environments.</p>
+        <div class="about-meta">
+          <div><span>Education</span>Shenzhen University &middot; B.S. CS (Innovation Class)</div>
+          <div><span>Academics</span>GPA 3.77/4.50 &middot; IELTS 6.5</div>
+          <div><span>Location</span>Shenzhen, China</div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
-<section class="contact" id="contact"><div class="wrap contact-inner"><div><h2>Get in touch.</h2><p>Research questions, project discussions, and ideas.</p></div><a class="email" href="mailto:zpyc1oud@outlook.com">zpyc1oud@outlook.com</a></div></section>
-<footer><div class="wrap footer-inner"><span><span class="footer-initials">PZ.</span> &nbsp; © 2026 Pengyu Zha</span><span>Research & engineering</span><a href="#main">Back to top</a></div></footer>
-</body></html>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-inner">
+    <div>
+      <h2>Get in touch.</h2>
+      <p>Research collaborations, engineering roles, and project discussions.</p>
+    </div>
+    <a class="email" href="mailto:zpyc1oud@outlook.com">zpyc1oud@outlook.com</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span><span class="footer-initials">PZ.</span> &nbsp; &copy; 2026 Pengyu Zha</span>
+    <span>Research &amp; engineering</span>
+    <a href="#main">Back to top</a>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var el = document.getElementById('embodiedue-stars');
+    if (!el || !window.fetch) return;
+    fetch('https://api.github.com/repos/zpyc1oud/EmbodiedUE', { headers: { Accept: 'application/vnd.github+json' } })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        if (d && typeof d.stargazers_count === 'number') {
+          el.textContent = '\u2605 ' + d.stargazers_count + ' Stars';
+        }
+      })
+      .catch(function () {});
+  })();
+</script>
+</body>
+</html>
